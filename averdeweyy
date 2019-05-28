@@ -1,0 +1,22 @@
+#creo una clase cualquiera, con su constructor y el objeto en forma de str
+class Arma:
+    def __init__(self, nombre):
+        self.nombre=nombre
+        #self.estilo=estilo
+        #self.carga=carga
+        
+    def __str__(self):
+        return (self.nombre)
+#hago una lista de cosas que le voy a pasar al constructor de  clase
+nombre=["AK47", "ametralladora"]
+#hago una lista vacia para volcar objetos creados por el constructor
+armas=[]
+#para cada elemento n de la lista nombre, pasarlos por el constructor diciendo que cada n sera un arma, y la
+#llamaremos A, siendo entonces un objeto, lo recopilaremos en una lista de objetos(A)
+
+for n in nombre:
+    A=Arma(n)
+    armas.append(A)
+#recorro la lista de objetos armas, y a cada una la llamo b, y la imprimo
+for b in armas:
+    print (b)   
